@@ -72,7 +72,16 @@ layerSwitcher.hidePanel = function() {};
 layerSwitcher.showPanel();
 
 
-map.getView().fit([788203.987990, -1600788.046173, 3992604.259214, 648006.661415], map.getSize());
+    var searchLayer = new ol.SearchLayer({
+      layer: lyr_Licences_1,
+      colName: 'Code',
+      zoom: 10,
+      collapsed: true,
+      map: map
+    });
+
+    map.addControl(searchLayer);
+map.getView().fit([974739.602764, -1302892.482292, 3762842.745053, 648470.045131], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1

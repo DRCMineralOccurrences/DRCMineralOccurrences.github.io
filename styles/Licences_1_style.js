@@ -19,7 +19,7 @@ var style_Licences_1 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(123,123,123,0.301960784314)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(158,158,158,0.145098039216)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(123,123,123,0.764705882353)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2}), fill: new ol.style.Fill({color: 'rgba(158,158,158,0.611764705882)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement)
     })];
